@@ -10,12 +10,14 @@ class SaldoCard extends StatelessWidget {
         padding: EdgeInsets.all(20.0),
         child: Consumer<Saldo>(
           builder: (context, valor, child) {
-            return Text(valor.toString(),
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                ));
+            return Text(
+              valor.toString(),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
+            );
           },
         ),
       ),
