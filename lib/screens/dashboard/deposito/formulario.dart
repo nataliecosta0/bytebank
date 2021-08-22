@@ -12,6 +12,11 @@ class FormularioDeposito extends StatelessWidget {
   final TextEditingController _controladorCampoValor = TextEditingController();
 
   Widget build(BuildContext context) {
+    final ButtonStyle style = ElevatedButton.styleFrom(
+      textStyle: const TextStyle(fontSize: 15),
+      primary: Colors.red[300]
+    );
+
     return Scaffold(
         appBar: AppBar(
           title: Text(_tituloAppBar),
@@ -25,7 +30,7 @@ class FormularioDeposito extends StatelessWidget {
                   rotulo: _rotuloCampoValor,
                   icone: Icons.monetization_on),
               ElevatedButton(
-                //style: style,
+                style: style,
                 onPressed: () => _criaDeposito(context),
                 child: const Text(_textoBotaoConfirmar),
               )
