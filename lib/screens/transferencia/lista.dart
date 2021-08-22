@@ -38,6 +38,7 @@ class _ListaTransferenciasState extends State<ListaTransferencias> {
   }
 
   void _atualiza(Transferencia transferenciaRecebida) {
+    // ignore: unnecessary_null_comparison
     if (transferenciaRecebida != null) {
       setState(
         () {
